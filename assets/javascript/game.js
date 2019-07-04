@@ -15,6 +15,12 @@ var winCount = 0;
 var currentScore = 0;
 var targetScore = 0;
 
+// TODO
+// fix the bug when you click on it it should show the result and show lost/win message
+// THE Words wins and loses should stay 
+// Go over the js file again
+// add padding in between crystal images-->css
+
 
 //Created Crystal Object for 4 crystal
 var Crystal = {
@@ -58,14 +64,7 @@ var startGame = function() {
     $("#current-score").html(currentScore);
     $("#target-score").html(targetScore);
 
-    console.log("--------------------------")
-    console.log("Target Score:" + targetScore);
-    console.log("Purple-crystal: " + Crystal.Purple_crystal.value + "| Blue-crystal: " + Crystal.Blue_crystal.value + " | Pink-crystal: " + Crystal.Pink_crystal.value + "| White-crystal: " + Crystal.White_crystal.value);
-    console.log("--------------------------")
-
 }
-
-//new added code
 
 var addValues = function(Crystal) {
         // change the current Score 
@@ -78,7 +77,7 @@ var addValues = function(Crystal) {
         console.log("Your Score;" + currentScore);
 
     }
-    // chec if user  won or lost and reset the Game
+    // check if user  won or lost and reset the Game
 
 var checkWin = function() {
     if (currentScore > targetScore) {
@@ -102,8 +101,6 @@ var checkWin = function() {
 
         //Restart the game 
         startGame();
-
-
     }
 }
 
@@ -128,9 +125,3 @@ $("#White_crystal").click(function() {
     addValues(Crystal.White_crystal);
 
 });
-
-// TODO
-// fix the bug when you click on it it should show the result and show lost/win message
-// THE Words wins and loses should stay 
-// Go over the js file again
-// add padding in between crystal images-->css
