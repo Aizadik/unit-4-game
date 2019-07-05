@@ -9,17 +9,15 @@
 
 //Global variables;
 
-var randomResult;
+//var randomResult;
 var lossCount = 0;
 var winCount = 0;
 var currentScore = 0;
 var targetScore = 0;
 
 // TODO
-// fix the bug when you click on it it should show the result and show lost/win message
+// fix the bug when you click on it it should show the total first and show lost/win message
 // add padding in between crystal images-->css
-// add descriptive Read me file and image.
-
 
 //Created Crystal Object for 4 crystal
 var Crystal = {
@@ -66,18 +64,18 @@ var startGame = function() {
 }
 
 var addValues = function(Crystal) {
-        // change the current Score 
-        currentScore = currentScore + Crystal.value;
-        // change the HTML to reflect change in current score
-        $("#current-score").html(currentScore);
+    // change the current Score 
+    currentScore = currentScore + Crystal.value;
+    // change the HTML to reflect change in current score
+    $("#current-score").html(currentScore);
 
-        // call checkWin function
-        checkWin();
-        console.log("Your Score;" + currentScore);
+    // call checkWin function
+    checkWin();
+    console.log("Your Score;" + currentScore);
 
-    }
-    // check if user  won or lost and reset the Game
+}
 
+// check if user  won or lost and reset the Game
 var checkWin = function() {
     if (currentScore > targetScore) {
         alert("You lost, please try again!");
@@ -96,7 +94,7 @@ var checkWin = function() {
         //Add to the win counter
         winCount++;
         // Change Win count html
-        $("#wins").html(win);
+        $("#wins").html(winCount);
 
         //Restart the game 
         startGame();

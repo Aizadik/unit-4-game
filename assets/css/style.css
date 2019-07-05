@@ -29,27 +29,27 @@ body {
 #aside-right {
     background: rgb(168, 90, 168);
     width: 330px;
-    padding: 30px;
+    padding: 20px;
     display: inline-block;
     float: left;
     margin-top: 20px;
-    height: 320.88px;
+    height: 280.88px;
     text-align: center;
 }
 
 #aside-left {
     background: rgb(168, 90, 168);
     width: 330px;
-    padding: 30px;
+    padding: 20px;
     display: inline-block;
     float: right;
     margin-top: 20px;
-    height: 320.88px;
+    height: 280.88px;
     text-align: center;
 }
 
 p {
-    padding: 20px;
+    padding: 10px;
     color: rgb(168, 90, 168);
     background: white;
 }
