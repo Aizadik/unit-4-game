@@ -17,9 +17,8 @@ var targetScore = 0;
 
 // TODO
 // fix the bug when you click on it it should show the result and show lost/win message
-// THE Words wins and loses should stay 
-// Go over the js file again
 // add padding in between crystal images-->css
+// add descriptive Read me file and image.
 
 
 //Created Crystal Object for 4 crystal
@@ -104,7 +103,7 @@ var checkWin = function() {
     }
 }
 
-// clicks each crystal and alerts it.
+// clicks each crystal and alert it.
 startGame();
 $("#Purple_crystal").click(function() {
     //alert("Puple crystal is clicked!");
