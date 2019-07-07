@@ -15,11 +15,6 @@ var winCount = 0;
 var currentScore = 0;
 var targetScore = 0;
 
-// TODO
-// fix the bug when you click on it it should show the total first and show lost/win message
-// add padding in between crystal images-->css
-//add img to read me
-
 //Created Crystal Object for 4 crystal
 var Crystal = {
     Purple_crystal: {
@@ -87,6 +82,7 @@ var checkWin = function() {
         $("#loses").html(lossCount);
         $("#current-score").html(currentScore);
 
+        //alert if the user lost
         function alertUser() {
             alert("You lost, please try again!");
             startGame();
@@ -103,15 +99,13 @@ var checkWin = function() {
         $("#wins").html(winCount);
         $("#current-score").html(currentScore);
 
+        //alert if the user won
         function alertUser() {
             alert("Congratulations ! You Won!");
             startGame();
 
         }
         setTimeout(alertUser, 1000);
-
-        //Restart the game 
-
     }
 }
 
