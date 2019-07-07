@@ -10,5 +10,5 @@
    * The game restarts whenever you win or lose.
    * Have fun!
 
-
+  ![Image description](assets/images/readMe.png)
     
